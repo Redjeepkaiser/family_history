@@ -1,0 +1,53 @@
+.menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .hint_up {
+        text-align: center;
+        margin-bottom: 0;
+        font-family: "Handwriting";
+    }
+
+    .hint_down {
+        text-align: center;
+        margin-top: 0;
+        font-family: "Handwriting";
+    }
+
+    &__scroller {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        overflow-y: scroll;
+        cursor: url("../../../assets/icons/cursor.svg"), auto;
+
+        background-color: white;
+
+        &__item {
+            width: fit-content;
+            cursor: url("../../../assets/icons/cursor_hover.svg"), auto;
+            text-align: center;
+            margin-top: 10px;
+            font-family: 'Playfair';
+        }
+    }
+
+    button {
+        cursor: url("../../../assets/icons/cursor_hover.svg"), auto;
+        border: none;
+        background-color: transparent;
+    }
+}
+
+.arrow {
+    height: 6vh;
+    width: 6vh;
+}

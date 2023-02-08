@@ -1,0 +1,25 @@
+.chapterpage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+
+    background-color: white;
+
+    &__back {
+        position: fixed;
+        margin: 20px;
+        cursor: url("~/src/assets/icons/cursor_hover.svg"), auto;
+        width: 30px;
+        height: 30px;
+        z-index: 999;
+        fill: var(--amplify-colors-black);
+    }
+}

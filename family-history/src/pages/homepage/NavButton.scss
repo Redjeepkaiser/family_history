@@ -1,0 +1,111 @@
+.svg-wrapper {
+    cursor: url('~/src/assets/icons/cursor_hover_white.svg'), auto;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+    color: white;
+    -webkit-transition: background 0.4s 0.5s;
+    transition: background 0.4s 0.5s;
+}
+
+.svg-wrapper:hover {
+    background: black;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.svg-wrapper svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.svg-wrapper svg line {
+    stroke-width: 3;
+    stroke: white;
+    fill: none;
+    transition: transform .8s ease-in-out;
+}
+
+.svg-wrapper h1 {
+    font-family: 'Handwriting';
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    color: black;
+}
+
+.svg-wrapper span {
+    font-family: Montserrat;
+    font-size: 13px;
+    display: block;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+.svg-wrapper h1,
+.svg-wrapper span {
+    -webkit-transition: color 0.4s 0.5s;
+    transition: color 0.4s 0.5s;
+}
+
+.svg-wrapper:hover h1,
+.svg-wrapper:hover span {
+    color: var(--color-white);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.svg-wrapper svg line.top,
+.svg-wrapper svg line.bottom {
+    stroke-dasharray: 330 240;
+}
+
+.svg-wrapper svg line.left,
+.svg-wrapper svg line.right {
+    stroke-dasharray: 490 400;
+}
+
+// For desktop
+@media only screen and (min-width: 768px) {
+    .svg-wrapper h1 {
+        font-size: 50px;
+    }
+
+    .svg-wrapper {
+        box-shadow: inset 0 0 0 3px black;
+        width: 300px;
+        height: 460px;
+    }
+
+    .svg-wrapper:hover svg line.top {
+        -webkit-transform: translateX(-600px);
+        transform: translateX(-600px);
+    }
+
+    .svg-wrapper:hover svg line.bottom {
+        -webkit-transform: translateX(600px);
+        transform: translateX(600px);
+    }
+
+    .svg-wrapper:hover svg line.left {
+        -webkit-transform: translateY(920px);
+        transform: translateY(920px);
+    }
+
+    .svg-wrapper:hover svg line.right {
+        -webkit-transform: translateY(-920px);
+        transform: translateY(-920px);
+    }
+}

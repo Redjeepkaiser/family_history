@@ -1,0 +1,11 @@
+.back-button {
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    z-index: 999;
+
+    .arrow-left {
+        width: 64px;
+        height: 64px;
+    }
+}

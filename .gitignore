@@ -1,0 +1,19 @@
+# Distribution / packaging
+bin/
+build/
+dist/
+lib/
+lib64/
+var/
+amplify/
+
+/.vscode
+aws-exports.js
+secret.md
+token.json
+credentials.json
+
+*.epub
+*.xhtml
+*.log
+*.zip

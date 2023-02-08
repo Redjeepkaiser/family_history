@@ -1,0 +1,21 @@
+// Fonts
+@font-face {
+  font-family: Handwriting;
+  src: url('./assets/fonts/HomemadeApple-Regular.ttf')
+}
+
+/* Styling that applies to the whole project */
+html,
+body,
+#root,
+.App {
+  a {
+    color: black;
+  }
+
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}

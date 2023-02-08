@@ -1,0 +1,109 @@
+.info_block {
+    z-index: 100;
+    background-color: white;
+    border-radius: 25px;
+    height: 60%;
+    width: 80%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__image_wrapper {
+        width: 150px;
+        height: 150px;
+        margin-left: 30px;
+        padding: 0;
+
+        img {
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 100%;
+        }
+    }
+
+    &__button_wrapper {
+        height: 100%;
+        width: fit-content;
+    }
+
+    &__info_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            text-align: left;
+            margin: 0;
+            margin-left: 10px;
+            font-family: "Playfair";
+        }
+
+        &__name {
+            font-size: 18px;
+            margin: 0 0 20px 0;
+        }
+
+        &__birth {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__death {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    button {
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        padding: 0;
+
+        border: none;
+        background-color: transparent;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+@media only screen and (min-width: 768px) {
+    .info_block {
+        height: 30%;
+        width: 30%;
+
+        &__content {
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}

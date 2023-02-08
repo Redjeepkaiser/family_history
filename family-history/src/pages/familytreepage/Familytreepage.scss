@@ -1,0 +1,39 @@
+.family_tree {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: white;
+
+    &__back {
+        position: absolute;
+        margin: 20px;
+        cursor: url("~/src/assets/icons/cursor_hover.svg"), auto;
+        width: 30px;
+        height: 30px;
+        z-index: 999;
+        fill: var(--amplify-colors-black);
+    }
+
+    &__tree_wrapper {
+        width: 80%;
+    }
+
+    &__menu_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+    }
+
+    &__info_block_wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+}
